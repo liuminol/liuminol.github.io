@@ -1,0 +1,1 @@
+"use strict";!function(){var t=document.querySelector(".page-header__toggle-theme"),e=document.body,s="page-body--dark";e.classList.remove(s),t.textContent="Темнее",t.classList.remove("visually-hidden"),t.addEventListener("click",function(){e.classList.contains(s)?(e.classList.remove(s),this.textContent="Темнее"):(e.classList.add(s),this.textContent="Светлее")})}();

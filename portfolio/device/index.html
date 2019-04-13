@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Device</title>
+</head>
+
+<body>
+  <header class="main-header content">
+    <div class="header-top-wrap clearfix">
+      <h1 class="logo"><a>Device</a></h1>
+      <form action="/" method="get" name="search">
+        <input type="search" name="s" placeholder="Поиск по сайту">
+        <input type="submit" value="Найти">
+        <span class="search-icon"></span>
+      </form>
+      <ul class="user-instruments-header">
+        <li><a class="user-login user-name">Войти</a></li>
+        <li><a class="user-logout" style="display: none">Выйти</a></li>
+        <li><a class="user-cart">Корзина</a></li>
+        <li><a class="comparison">Сравнить</a></li>
+
+      </ul>
+    </div>
+    <nav class="main-menu">
+      <ul>
+        <li><a class="catalog-menu-add">Каталог товаров</a>
+          <ul class="catalog-menu">
+            <li><a>Виртуальная реальность</a></li>
+            <li><a>Фитнесс-браслеты</a></li>
+            <li><a>Квадрокоптеры</a></li>
+            <li><a>Моноподы для селфи</a></li>
+            <li><a>Умные часы</a></li>
+            <li><a>Экшн-камеры</a></li>
+          </ul>
+        </li>
+        <li><a>Доставка</a></li>
+        <li><a>Гарантия</a></li>
+        <li><a>Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <input class="hidden-element" type="radio" name="toggle" id="btn-1" checked>
+  <input class="hidden-element" type="radio" name="toggle" id="btn-2">
+  <input class="hidden-element" type="radio" name="toggle" id="btn-3">
+  <div class="slider content">
+    <div class="slide clearfix" id="slide-1">
+      <img src="img/slide-1.png" alt="Селфи палка" width="384" height="486">
+      <div class="slide-about">
+        <p class="slide-num">01</p>
+        <p class="slide-title">Делай селфи, как Бен Стиллер!</p>
+        <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. <br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+        <a class="slide-info">Подробнее</a>
+        <div class="slide-features clearfix">
+          <div class="feature">
+            <p>8,5 м</p>
+            <p>Длина палки</p>
+          </div>
+          <div class="feature">
+            <p>5 кг</p>
+            <p>Вес палки</p>
+          </div>
+          <div class="feature">
+            <p>Карбон</p>
+            <p>Материал</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide clearfix" id="slide-2">
+      <img src="img/slide-2.png" alt="Фитнесс браслет" width="345" height="485">
+      <div class="slide-about">
+        <p class="slide-num">02</p>
+        <p class="slide-title">Худеем правильно!</p>
+        <p class="slide-description">Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+        <a class="slide-info">Подробнее</a>
+        <div class="slide-features clearfix">
+          <div class="feature">
+            <p>48 часов</p>
+            <p>Без подзарядки</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide clearfix" id="slide-3">
+      <img src="img/slide-3.png" alt="Квадрокоптер" width="526" height="334">
+      <div class="slide-about">
+        <p class="slide-num">03</p>
+        <p class="slide-title">Порхает как бабочка, жалит как пчела!</p>
+        <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+        <a class="slide-info">Подробнее</a>
+        <div class="slide-features clearfix">
+          <div class="feature">
+            <p>800 м</p>
+            <p>Дальность полета</p>
+          </div>
+          <div class="feature">
+            <p>50 м</p>
+            <p>Радиус поражения</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-toggle">
+      <label for="btn-1"></label>
+      <label for="btn-2"></label>
+      <label for="btn-3"></label>
+    </div>
+  </div>
+
+  <section class="repeat-menu content">
+    <h2 class="visually-hidden">Популярные товары</h2>
+    <ul class="repeat-menu-items">
+      <li><a class="item item-1">Виртуальная реальность</a></li>
+      <li><a class="item item-2">Моноподы для селфи</a></li>
+      <li><a class="item item-3">Экшн-камеры</a></li>
+      <li><a class="item item-4">Фитнесс браслеты</a></li>
+      <li><a class="item item-5">Умные часы</a></li>
+      <li><a class="item item-6">Квадрокоптеры</a></li>
+    </ul>
+  </section>
+
+  <section class="services-wrap">
+    <div class="services content clearfix">
+      <input class="hidden-element" type="radio" name="services" id="service-1" checked>
+      <input class="hidden-element" type="radio" name="services" id="service-2">
+      <input class="hidden-element" type="radio" name="services" id="service-3">
+      <h2 class="visually-hidden">Сервисы</h2>
+      <div class="services-toggle">
+        <label for="service-1">Доставка</label>
+        <label for="service-2">Гарантия</label>
+        <label for="service-3">Кредит</label>
+      </div>
+      <div class="services-container">
+        <section class="delivery">
+          <h3 class="service-title">Доставка</h3>
+          <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </section>
+        <section class="warranty">
+          <h3 class="service-title">Гарантия</h3>
+          <p class="service-description">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+        </section>
+        <section class="credit">
+          <h3 class="service-title">Кредит</h3>
+          <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="suppliers content">
+    <h2 class="visually-hidden">Наши поставщики</h2>
+    <a><img src="img/sup-logo/logo1.jpg" alt="dji" width="260" height="100"></a>
+    <a><img src="img/sup-logo/logo2.jpg" alt="sp gadgets" width="260" height="100"></a>
+    <a><img src="img/sup-logo/logo3.jpg" alt="go pro" width="260" height="100"></a>
+    <a><img class="margin-reset" src="img/sup-logo/logo4.jpg" alt="vive" width="260" height="100"></a>
+  </section>
+
+  <div class="content clearfix">
+    <section class="about">
+      <h2>О нас</h2>
+      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+      <ul>
+        <li>Деловые линии</li>
+        <li>Автотрейдинг</li>
+        <li>ЖелДорЭкспедиция</li>
+      </ul>
+      <a class="btn">Подробнее о нас</a>
+    </section>
+
+    <section class="contacts">
+      <h2>Контакты</h2>
+      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+      <a href="#" class="map">
+        <img src="img/map.jpg" alt="Схема проезда" width="560" height="222">
+      </a>
+      <a href="#" class="feedback btn">Напишите нам</a>
+    </section>
+  </div>
+
+  <footer class="main-footer">
+    <div class="content">
+      <div class="clearfix">
+        <p class="logo">Device</p>
+        <ul class="user-instruments-footer">
+          <li><a class="user-login">Войти</a></li>
+          <li><a class="comparison">Сравнить</a></li>
+          <li><a class="user-cart">Корзина</a></li>
+        </ul>
+      </div>
+      <div class="clearfix">
+        <p class="footer-address"><span class="visually-hidden">Наш адрес: </span>г. Москва, ул. Строителей 15</p>
+        <ul class="footer-menu">
+          <li><a>Доставка</a></li>
+          <li><a>Гарантия</a></li>
+          <li><a>Контакты</a></li>
+        </ul>
+        <p class="footer-tel">Тел: +7 (495) 000-00-00</p>
+      </div>
+      <div class="clearfix">
+        <div class="socials">
+          <p class="visually-hidden">Добавляйтесь к нам:</p>
+          <a href="#" class="social social-fb"><span class="visually-hidden">Фейсбук</span></a>
+          <a href="#" class="social social-ig"><span class="visually-hidden">Инстаграм</span></a>
+          <a href="#" class="social social-tw"><span class="visually-hidden">Твиттер</span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="modal-window-map">
+    <button class="modal-window-close modal-close-map" type="button" title="Закрыть"><span class="visually-hidden">Закрыть</span></button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.6334319959788!2d37.52688586900065!3d55.68742884200074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1531749756545" width="960" height="560" style="border:0" allowfullscreen></iframe>
+  </div>
+  <div class="modal-window-feedback">
+    <button class="modal-window-close modal-close-feedback" type="button" title="Закрыть"><span class="visually-hidden">Закрыть</span></button>
+    <form class="feedback-form" action="#" method="post">
+      <label for="feedback-name">Ваше имя:</label>
+      <label for="feedback-email">Ваш e-mail:</label>
+      <input type="text" id="feedback-name" name="name" placeholder="Представльтесь, пожалуйста" required>
+      <input type="email" id="feedback-email" name="mail" placeholder="Для отправки ответа" required>
+      <p>Текст письма:</p><textarea name="text" style="resize: none" placeholder="В свободной форме" required></textarea>
+      <button type="submit" class="btn">Отправить</button>
+    </form>
+  </div>
+  
+  <script src="js/popup.js"></script>
+  
+</body>
+
+</html>

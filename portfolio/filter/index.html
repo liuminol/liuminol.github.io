@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Сложный фильтр товаров</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.createElement('template');
+
+  </script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="filter">
+      <button class="filter__toggle-btn" type="button"><span class="visually-hidden">Открыть </span>фильтры <sup class="filter__checked-counter">0</sup></button>
+
+      <div class="filter__controls">
+        <!--   filter-control-->
+        <button class="filter__name" type="button">Цвет</button>
+
+        <div class="filter__info info">
+          <ul class="info__list">
+            <li class="info__item">
+              <input id="color-1" type="checkbox" name="color" value="dark blue" hidden>
+              <label class="info__label-checkbox" for="color-1">темно-синий</label>
+            </li>
+            <li class="info__item">
+              <input id="color-2" type="checkbox" name="color" value="dark red" hidden>
+              <label class="info__label-checkbox" for="color-2">темно-красный</label>
+            </li>
+            <li class="info__item">
+              <input id="color-3" type="checkbox" name="color" value="beige" hidden>
+              <label class="info__label-checkbox" for="color-3">бежевый</label>
+            </li>
+            <li class="info__item">
+              <input id="color-4" type="checkbox" name="color" value="black" hidden>
+              <label class="info__label-checkbox" for="color-4">черный</label>
+            </li>
+          </ul>
+        </div>
+
+        <!--   filter-control-->
+        <button class="filter__name" type="button">Высота (см)</button>
+
+        <div class="filter__info info">
+          <ul class="info__list">
+            <li class="info__item">
+              <input id="height-1" type="checkbox" name="height" value="h: 72" hidden>
+              <label class="info__label-checkbox" for="height-1">72</label>
+            </li>
+            <li class="info__item">
+              <input id="height-2" type="checkbox" name="height" value="h: 78" hidden>
+              <label class="info__label-checkbox" for="height-2">78</label>
+            </li>
+            <li class="info__item">
+              <input id="height-3" type="checkbox" name="height" value="h: 80" hidden>
+              <label class="info__label-checkbox" for="height-3">80</label>
+            </li>
+            <li class="info__item">
+              <input id="height-4" type="checkbox" name="height" value="h: 89" hidden>
+              <label class="info__label-checkbox" for="height-4">89</label>
+            </li>
+          </ul>
+        </div>
+
+        <!--   filter-control-->
+        <button class="filter__name" type="button">Глубина (см)</button>
+
+        <div class="filter__info info">
+          <ul class="info__list">
+            <li class="info__item">
+              <input id="depth-1" type="checkbox" name="depth" value="d: 80" hidden>
+              <label class="info__label-checkbox" for="depth-1">80</label>
+            </li>
+            <li class="info__item">
+              <input id="depth-2" type="checkbox" name="depth" value="d: 85" hidden>
+              <label class="info__label-checkbox" for="depth-2">85</label>
+            </li>
+            <li class="info__item">
+              <input id="depth-3" type="checkbox" name="depth" value="d: 91" hidden>
+              <label class="info__label-checkbox" for="depth-3">91</label>
+            </li>
+            <li class="info__item">
+              <input id="depth-4" type="checkbox" name="depth" value="d: 95" hidden>
+              <label class="info__label-checkbox" for="depth-4">95</label>
+            </li>
+            <li class="info__item">
+              <input id="depth-5" type="checkbox" name="depth" value="d: 98" hidden>
+              <label class="info__label-checkbox" for="depth-5">98</label>
+            </li>
+            <li class="info__item">
+              <input id="depth-6" type="checkbox" name="depth" value="d: 101" hidden>
+              <label class="info__label-checkbox" for="depth-6">101</label>
+            </li>
+            <li class="info__item">
+              <input id="depth-7" type="checkbox" name="depth" value="d: 105" hidden>
+              <label class="info__label-checkbox" for="depth-7">105</label>
+            </li>
+          </ul>
+        </div>
+
+        <!--   filter-control-->
+        <button class="filter__name" type="button">Ширина (см)</button>
+
+        <div class="filter__info info">
+          <ul class="info__list">
+            <li class="info__item">
+              <input id="width-1" type="checkbox" name="width" value="w: 162" hidden>
+              <label class="info__label-checkbox" for="width-1">162</label>
+            </li>
+            <li class="info__item">
+              <input id="width-2" type="checkbox" name="width" value="w: 170" hidden>
+              <label class="info__label-checkbox" for="width-2">170</label>
+            </li>
+            <li class="info__item">
+              <input id="width-3" type="checkbox" name="width" value="w: 180" hidden>
+              <label class="info__label-checkbox" for="width-3">180</label>
+            </li>
+            <li class="info__item">
+              <input id="width-4" type="checkbox" name="width" value="w: 200" hidden>
+              <label class="info__label-checkbox" for="width-4">200</label>
+            </li>
+            <li class="info__item">
+              <input id="width-5" type="checkbox" name="width" value="w: 220" hidden>
+              <label class="info__label-checkbox" for="width-5">220</label>
+            </li>
+            <li class="info__item">
+              <input id="width-6" type="checkbox" name="width" value="w: 240" hidden>
+              <label class="info__label-checkbox" for="width-6">240</label>
+            </li>
+          </ul>
+        </div>
+
+        <!--   filter-control-->
+        <button class="filter__name" type="button">Материал обивки</button>
+
+        <div class="filter__info info">
+          <ul class="info__list">
+            <li class="info__item">
+              <input id="upholstery-1" type="checkbox" name="upholstery" value="leather" hidden>
+              <label class="info__label-checkbox" for="upholstery-1">натуральная кожа</label>
+            </li>
+            <li class="info__item">
+              <input id="upholstery-2" type="checkbox" name="upholstery" value="linen fabric" hidden>
+              <label class="info__label-checkbox" for="upholstery-2">льняная ткань</label>
+            </li>
+            <li class="info__item">
+              <input id="upholstery-3" type="checkbox" name="upholstery" value="polyester" hidden>
+              <label class="info__label-checkbox" for="upholstery-3">полиэстер</label>
+            </li>
+            <li class="info__item">
+              <input id="upholstery-4" type="checkbox" name="upholstery" value="nist" hidden>
+              <label class="info__label-checkbox" for="upholstery-4">нист</label>
+            </li>
+            <li class="info__item">
+              <input id="upholstery-5" type="checkbox" name="upholstery" value="cotton" hidden>
+              <label class="info__label-checkbox" for="upholstery-5">хлопок</label>
+            </li>
+          </ul>
+        </div>
+
+        <!--   filter-control-->
+        <button class="filter__name" type="button">Материал фурнитуры</button>
+
+        <div class="filter__info info">
+          <ul class="info__list">
+            <li class="info__item">
+              <input id="fitting-1" type="checkbox" name="fitting" value="bronze" hidden>
+              <label class="info__label-checkbox" for="fitting-1">бронза</label>
+            </li>
+            <li class="info__item">
+              <input id="fitting-2" type="checkbox" name="fitting" value="steel" hidden>
+              <label class="info__label-checkbox" for="fitting-2">сталь</label>
+            </li>
+            <li class="info__item">
+              <input id="fitting-3" type="checkbox" name="fitting" value="solid oak" hidden>
+              <label class="info__label-checkbox" for="fitting-3">массив дуба</label>
+            </li>
+            <li class="info__item">
+              <input id="fitting-4" type="checkbox" name="fitting" value="birch" hidden>
+              <label class="info__label-checkbox" for="fitting-4">береза</label>
+            </li>
+            <li class="info__item">
+              <input id="fitting-5" type="checkbox" name="fitting" value="eucalyptus" hidden>
+              <label class="info__label-checkbox" for="fitting-5">эвкалипт</label>
+            </li>
+            <li class="info__item">
+              <input id="fitting-6" type="checkbox" name="fitting" value="downy filler" hidden>
+              <label class="info__label-checkbox" for="fitting-6">пуховый наполнитель</label>
+            </li>
+          </ul>
+        </div>
+
+        <!--   filter-control-->
+        <button class="filter__name" type="button">Цена (руб)</button>
+
+        <div class="filter__info info--price">
+          <div class="info__range range">
+            <div class="range__scale">
+              <div class="range__bar"></div>
+            </div>
+            <div class="range__pin range__pin--min">
+              <input class="range__price range__price--min" type="text" value="0" readonly>
+            </div>
+            <div class="range__pin range__pin--max">
+              <input class="range__price range__price--max" type="text" value="100000" readonly>
+            </div>
+          </div>
+        </div>
+
+        <!--   filter-control-buttons-->
+        <button class="filter__control-btn filter__control-btn--apply" type="button">Применить</button>
+
+        <button class="filter__control-btn filter__control-btn--reset" type="reset">Сбросить</button>
+      </div>
+    </div>
+
+
+    <div class="content">
+      <div class="content__header">
+        <h1 class="content__heading">Диваны и кресла</h1>
+        <select class="content__sorting" name="sort">
+          <option value="price-increase">По возрастанию цены</option>
+          <option value="price-decrease">По убыванию цены</option>
+          <option value="new">Сначала новые</option>
+          <option value="discount">Сначала товары по скидке</option>
+          <option value="by-name">По названию</option>
+        </select>
+      </div>
+
+      <p class="content__desc">
+        Интерьер квартиры играет очень большую роль в формировании атмосферы. Она очень важна, потому что первое впечатление, оказывает очень большое влияние на восприятие помещения.
+        Если с порога Вы окружены уютом и комфортом, то Вы сможете полностью расслабиться и действительно отдохнуть.
+        Стильные и удобные диваны и кресла – это ключевой момент в создании необходимой обстановки. Вместительные и мягкие изделия привнесут в атмосферу ощущение роскоши.
+      </p>
+
+      <div class="content__product product__list"></div>
+    </div>
+  </div>
+
+  <template id="template">
+    <a class="product__item">
+      <span class="product__sizes">
+        <p class="product__size product__size--height"></p>
+        <p class="product__size product__size--depth"></p>
+        <p class="product__size product__size--width"></p>
+      </span>
+      <span class="product__lables">
+        <p class="product__novelty"></p>
+        <p class="product__discount"></p>
+      </span>
+      <span class="product__color">
+      </span>
+      <span class="product__info">
+        <p class="product__title"></p>
+        <span class="product__price">
+          <p class="product__current-price"></p>
+          <p class="product__old-price"></p>
+        </span>
+      </span>
+    </a>
+  </template>
+
+  <script src="js/data.js"></script>
+  <script src="js/polyfill-template.js"></script>
+  <script src="js/polyfill-nodelist-foreach.js"></script>
+  <script src="js/filter-controls.js"></script>
+  <script src="js/filter-count.js"></script>
+  <script src="js/checked-inputs.js"></script>
+  <script src="js/render-product.js"></script>
+  <script src="js/filter-apply.js"></script>
+  <script src="js/sorting.js"></script>
+  <script src="js/price-range.js"></script>
+</body>
+
+</html>
